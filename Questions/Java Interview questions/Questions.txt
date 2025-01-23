@@ -9,6 +9,7 @@ Object-Oriented Programming (OOP)
 8. What are functional interfaces in Java?
 9. What is the use of @FunctionalInterface annotation?
 10. Explain the concept of pass-by-value in Java.
+11. What is static key word and how do we use it java?
 
 Data Structures and Collections
 1. How does HashMap work internally in Java?
