@@ -43,11 +43,13 @@ The key differences between primitive data types and objects in Java are...
   - Private and Final methods are not overridden.
 
 ### 5
-- == compares object reference (memory address) and .equal() compares the content of the string. we always use .equals() for string.
+- `==` compares object reference (memory address) and `.equal()` compares the content of the string. we always use `.equals()` for string.
 - Example
+ ```java
   String str1 = "Hello";
   String str2 = "Hello";
   String str3 = new String("Hello");
+  
   System.out.println(str1 == str2);       // true (same object reference)
   System.out.println(str1 == str3);       // false (different object references)
   System.out.println(str1.equals(str2));  // true (same content)
