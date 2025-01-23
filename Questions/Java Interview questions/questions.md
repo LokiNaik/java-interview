@@ -2,7 +2,7 @@
 
 # Object-Oriented Programming (OOP)
 
-- [What are the differences between primitive data types and objects in Java?](answers.md#question1)
+- [What are the differences between primitive data types and objects in Java?](answers.md#1)
 - [What is the purpose of the 'static' keyword in Java?](answers.md#question2)
 
 Object-Oriented Programming (OOP)
