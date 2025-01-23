@@ -1,6 +1,6 @@
 # Answers
 
-### 1. Key Differences Between Primitive Data Types and Objects in Java
+### <a name="question1"></a>1. Key Differences Between Primitive Data Types and Objects in Java
 
 #### Primitive Data Types:
 - These are the most basic data types in Java and represent simple values. Examples include `int`, `char`, `boolean`, `float`, etc.
@@ -14,7 +14,7 @@
 - Objects are slower because they involve more complex operations.
 - Objects are mutable—they can be changed based on the class.
 
-### 2. The `static` Keyword in Java
+### <a name="question2"></a> 2. The `static` Keyword in Java
 
 - The `static` keyword in Java is used for memory management. Memory is allocated only once during the execution of the program.
 - The `static` keyword belongs to the class rather than an instance of the class.
@@ -22,12 +22,12 @@
 - Static methods can be overloaded but not overridden. We can have multiple methods with different parameters.
 - Static variables are essentially global variables.
 
-### 3. Static Methods and Overloading
+### <a name="question3"></a> 3. Static Methods and Overloading
 
 - A static method is tied to the class itself, not to objects. So, when we call a static method, we call it from the class and not using an object.
 - Overloading is like having multiple methods with different parameters. Overloading is a compile-time polymorphism.
 
-### 4. Method Overloading vs. Method Overriding
+### <a name="question4"></a> 4. Method Overloading vs. Method Overriding
 
 #### Method Overloading:
 - It is compile-time polymorphism.
@@ -46,7 +46,7 @@
 - The return type should be the same.
 - Private and final methods cannot be overridden.
 
-### 5. Comparison of `==` and `.equals()` for Strings
+### <a name="question5"></a> 5. Comparison of `==` and `.equals()` for Strings
 
 - `==` compares the object reference (memory address), and `.equals()` compares the content of the string. We always use `.equals()` for strings.
 
