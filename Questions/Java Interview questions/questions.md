@@ -1,7 +1,6 @@
 # Questions
 
 # Object-Oriented Programming (OOP)
-
 - [1. What are the differences between primitive data types and objects in Java?](answers.md#1)
 - [2. What is the purpose of the 'static' keyword in Java?](answers.md#question2)
 - [3. Why static method is not over-ridden and only overloaded?](answers.md#3)
