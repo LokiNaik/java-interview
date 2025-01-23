@@ -1,11 +1,11 @@
 # Questions
 
 # Object-Oriented Programming (OOP)
-- [1. What are the differences between primitive data types and objects in Java?](answers.md#1-key-differences-between-primitive-data-types-and-objects-in-java)
-- [2. What is the purpose of the 'static' keyword in Java?](answers.md#question2-the-static-keyword-in-java)
-- [3. Why static method is not over-ridden and only overloaded?](answers.md#3-static-methods-and-overloading)
-- [4. What is method overloading and method overriding in Java](answers.md#4-method-overloading-vs-method-overriding)
-- [5. Explain the difference between == and equals() in Java.](answers.md#5-comparison-of-==-and-equals-for-strings)
+- [1. What are the differences between primitive data types and objects in Java?](answers.md#question1)
+- [2. What is the purpose of the 'static' keyword in Java?](answers.md#question2)
+- [3. Why static method is not over-ridden and only overloaded?](answers.md#question3)
+- [4. What is method overloading and method overriding in Java](answers.md#question4)
+- [5. Explain the difference between == and equals() in Java.](answers.md#question5)
 
 
 Object-Oriented Programming (OOP)
