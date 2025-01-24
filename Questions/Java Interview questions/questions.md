@@ -5,21 +5,18 @@
 - [2. What is the purpose of the 'static' keyword in Java?](answers.md#question2)
 - [3. Why static method is not over-ridden and only overloaded?](answers.md#question3)
 - [4. What is method overloading and method overriding in Java](answers.md#question4)
-- [5. Explain the difference between == and equals() in Java.](answers.md#question5)
+- [5. Explain the difference between  `==` and `equals()` in Java.](answers.md#question5)
+- [6. What are the four pillars of Object-Oriented Programming in Java](answers.md#question6)
+- [7. What is the purpose of the final keyword in Java?](answers.md#question7)
+- [8. How is the `hashCode()` method related to `equals()` in Java?](answers.md#question8)
 
 
 Object-Oriented Programming (OOP)
-1. What are the four pillars of Object-Oriented Programming in Java? 
-2. Explain the difference between == and equals() in Java.
-3. What is method overloading and method overriding in Java?
-4. What is the purpose of the final keyword in Java?
-5. How is the hashCode() method related to equals() in Java?
 6. What is the default keyword in Java 8 interfaces?
 7. What is an interface in Java, and how is it different from an abstract class?
 8. What are functional interfaces in Java?
 9. What is the use of @FunctionalInterface annotation?
 10. Explain the concept of pass-by-value in Java.
-11. What is static key word and how do we use it java?
 
 Data Structures and Collections
 1. How does HashMap work internally in Java?
