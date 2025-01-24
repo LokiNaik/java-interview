@@ -21,6 +21,7 @@
 - The `static` keyword is a non-access modifier; you can use `static` for methods, variables, blocks, and nested classes.
 - Static methods can be overloaded but not overridden. We can have multiple methods with different parameters.
 - Static variables are essentially global variables.
+- Loaded during the compile time, no modifications of method is possible hence they are not over ridden.
 
 ### <a name="question3"></a> 3. Static Methods and Overloading
 
