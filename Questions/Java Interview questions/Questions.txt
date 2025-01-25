@@ -21,6 +21,26 @@ Technique: Two-pointer approach or iterative swapping.Check if an array is sorte
 7. Implement an algorithm to find the "Kth" largest element in an array.
     Technique: Sorting or use of max heap.
 
+Two Sum [Solution]
+Valid Parentheses [Solution]
+Merge Two Sorted Lists [Solution]
+Best Time to Buy and Sell Stock [Solution]
+Valid Palindrome [Solution]
+Invert Binary Tree
+Valid Anagram
+Binary Search
+Linked List Cycle
+Maximum Depth of Binary Tree
+Single Number
+Reverse Linked List
+Majority Element
+Missing Number
+Reverse String
+Diameter of Binary Tree [Solution]
+Middle of the Linked List [Solution]
+Convert Sorted Array to Binary Search Tree
+Maximum Subarray [Solution]
+
 Object-Oriented Programming (OOP)
 1. What are the four pillars of Object-Oriented Programming in Java?
 2. Explain the difference between == and equals() in Java.
