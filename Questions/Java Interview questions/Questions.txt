@@ -1,3 +1,26 @@
+Coding questions:
+1. Find the maximum element in an array.
+    Technique: Iteration through the array.
+
+2. Find the minimum element in an array.    
+  Technique: Iteration through the array.
+
+3. Calculate the sum of all elements in an array.    
+  Technique: Iteration through the array.
+
+4. Reverse an array.    
+Technique: Two-pointer approach or iterative swapping.Check if an array is sorted.
+    Technique: Iteration through the array.
+
+5. Remove duplicates from a sorted array.
+    Technique: Two-pointer approach.
+
+6. Rotate an array to the right by k steps.
+    Technique: Basic array manipulation.
+
+7. Implement an algorithm to find the "Kth" largest element in an array.
+    Technique: Sorting or use of max heap.
+
 Object-Oriented Programming (OOP)
 1. What are the four pillars of Object-Oriented Programming in Java?
 2. Explain the difference between == and equals() in Java.
