@@ -1,0 +1,39 @@
+Coding questions:
+1. Find the maximum element in an array.
+    Technique: Iteration through the array.
+2. Find the minimum element in an array.    
+    Technique: Iteration through the array.
+3. Calculate the sum of all elements in an array.    
+    Technique: Iteration through the array.
+4. Reverse an array.    
+    Technique: Two-pointer approach or iterative swapping.Check if an array is sorted.
+    Technique: Iteration through the array.
+5. Remove duplicates from a sorted array.
+    Technique: Two-pointer approach.
+6. Rotate an array to the right by k steps.
+    Technique: Basic array manipulation.
+7. Implement an algorithm to find the "Kth" largest element in an array.
+    Technique: Sorting or use of max heap.
+
+Two Sum [Solution]
+Valid Parentheses [Solution]
+Merge Two Sorted Lists [Solution]
+Best Time to Buy and Sell Stock [Solution]
+Valid Palindrome [Solution]
+Invert Binary Tree
+Valid Anagram
+Binary Search
+Linked List Cycle
+Maximum Depth of Binary Tree
+Single Number
+Reverse Linked List
+Majority Element
+Missing Number
+Reverse String
+Diameter of Binary Tree [Solution]
+Middle of the Linked List [Solution]
+Convert Sorted Array to Binary Search Tree
+Maximum Subarray [Solution]
+
+
+https://instabyte.io/p/interview-master-100
