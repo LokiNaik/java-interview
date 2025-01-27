@@ -22,12 +22,12 @@ public class KthLargestElementInArray {
     public static int kthLargestElementInArray(int[] arr, int k) {
         PriorityQueue<Integer> minHeap = new PriorityQueue<Integer>(k);
         for ( int num : arr){
-            minHeap.add(num);
+            minHeap.add(num); 
             if (minHeap.size() > k){
-                minHeap.poll();
+                minHeap.poll(); // removes the lowest size from the heap.
             }
         }
-        return minHeap.peek();
+        return minHeap.peek(); // Retruns the highest value.
     }
 
 }
