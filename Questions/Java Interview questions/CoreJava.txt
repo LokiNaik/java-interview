@@ -1,9 +1,7 @@
 Basic Java:
 - Memory management question - 
     memory is divided into 5.
-
 - Loader subsystem 
-
 - What is Garbbage collectors and how it works and its types in java.
 - What is memory leak, why it is occurs. how to handle.
 - Solid Principles in java.
@@ -25,7 +23,26 @@ Exception:
   Try Catch Finally
   Different between Trow and Throws.
   ClassCastExcption - why this error occurs and how to handle.
+  Different Exception like NullPointer, ArrayOutOfBound etc..
+  OverRide exception.
 
-23:29 mins
-  
-  
+Serilization:
+    What is serialization and deserialization.
+    code for Implement a serialization and DeSerialization.
+    What is Transient. (This advoids serialization) 
+    What is Externalization.
+    What is SerialVersion UID.
+
+Object 
+    What is HashCode.
+    why hascode is printed in conslose.
+    how to get the data from a Hascode.
+    hashCode()
+    clone()
+    wait()
+    notify()
+    notifyAll()
+    finalize()
+    getClass()
+
+    
