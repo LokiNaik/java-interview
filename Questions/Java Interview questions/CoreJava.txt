@@ -33,7 +33,7 @@ Serilization:
     What is Externalization.
     What is SerialVersion UID.
 
-Object 
+Object Class
     What is HashCode.
     why hascode is printed in conslose.
     how to get the data from a Hascode.
@@ -45,4 +45,24 @@ Object
     finalize()
     getClass()
 
+ String Class
+    Why string is immutable.
+    Difference btw StringBuffer and String Builder
+        StringBuffer is synchronized and StringBuilder is not sync.
+    Methods of String.
+OOP concepts.
+MultiThreading
+    What is multiTasking.
+    Runnable, Thread Class
+    Thread Schedular.
+    How start method works and who starts this method.
+    Minimum and max priority of Thread.
+    DeatLock condition and code for it.
+    Executor framework
+    Lifecycle of Thread class.
+
+Collections
+    What is List
+    Diff btn List and LinkedList
+    All types of Collections.
     
