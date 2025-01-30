@@ -15,6 +15,10 @@ BeanFactory:
   BeanFactory is the parent container of ApplicationContext interface.
   It loads the data from Configuration file i.e., .XML file
   It doesnot support the Annotation based configuration.
+  Lazy loading of objects.
 
 ApplicationContext:
+  It supports annotation based processing.
+  Agressive object loading.
   
+
