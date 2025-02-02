@@ -157,3 +157,16 @@ Below is a categorized list of essential annotations:
 - **@RolesAllowed**: Defines allowed roles for a method.
 
 
+
+
+# Spring Boot 
+#### What is Spring Framework, and why is it used?
+#### **Definition**:
+Spring Framework is an open-source framework for building Java-based enterprise applications.
+It provides features like dependency injection, transaction management, and AOP, making development easier and reducing boilerplate code.
+
+##### **Why is it used?**
+- To develop loosely coupled applications using dependency injection.
+- Provides modular components like Spring MVC, Spring Security, etc.
+- Handles cross-cutting concerns like logging and security using AOP.
+- Simplifies database interaction using Spring JDBC or Spring Data JPA.
