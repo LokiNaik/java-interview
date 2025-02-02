@@ -1,6 +1,6 @@
 #### String Class
 - [Why string is immutable?](CoreJavaAnswers.md#question1)
-    Difference btw StringBuffer and String Builder
+- [Difference between StringBuffer and String Builder](CoreJavaAnswers.md#)
         StringBuffer is synchronized and StringBuilder is not sync.
     Methods of String.
     
