@@ -1,3 +1,9 @@
+#### String Class
+- [Why string is immutable?](CoreJavaAnswers.md#question1)
+    Difference btw StringBuffer and String Builder
+        StringBuffer is synchronized and StringBuilder is not sync.
+    Methods of String.
+    
 #### Basic Java:
 - Memory management question - 
     memory is divided into 5.
@@ -45,11 +51,7 @@
     finalize()
     getClass()
 
- #### String Class
-    [Why string is immutable.](CoreJavaAnswers.md#question1)
-    Difference btw StringBuffer and String Builder
-        StringBuffer is synchronized and StringBuilder is not sync.
-    Methods of String.
+
 #### OOP concepts.
 #### MultiThreading
     What is multiTasking.
