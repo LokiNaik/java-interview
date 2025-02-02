@@ -46,7 +46,7 @@
     getClass()
 
  #### String Class
-    [Why string is immutable.](Core java answers.md#question1)
+    [Why string is immutable.](CoreJavaAnswers.md#question1)
     Difference btw StringBuffer and String Builder
         StringBuffer is synchronized and StringBuilder is not sync.
     Methods of String.
