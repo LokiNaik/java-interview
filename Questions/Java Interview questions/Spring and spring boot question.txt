@@ -1,1 +1,14 @@
 1 .What is Spring Framework, and why is it used?
+2. Explain Inversion of Control (IoC) and Dependency Injection (DI).
+3. Aspect-Oriented Programming (AOP)
+4. What are spring modules?
+5. What are the different types of dependency injection in Spring? Provide examples.
+6. What is the Bean Lifecycle in Spring?
+7. What is the difference between @Bean and @Component?
+8. What are Spring Scopes?
+9. What is the use of the ApplicationContext in Spring?
+10. Explain the difference between ApplicationContext and BeanFactory.
+11. What is autowiring in Spring?
+12. How do you handle circular dependencies in Spring?
+13. What are starter dependencies in Spring Boot?
+14. What is the difference between Spring and Spring Boot?
