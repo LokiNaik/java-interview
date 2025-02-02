@@ -1,4 +1,4 @@
-Basic Java:
+#### Basic Java:
 - Memory management question - 
     memory is divided into 5.
 - Loader subsystem 
@@ -13,7 +13,7 @@ Basic Java:
 - Increment decrement operators.
 - What is Wrapper class.
 
-Exception:
+#### Exception:
   What is exception
   Hierarchi of exception
   Throwable exception
@@ -26,14 +26,14 @@ Exception:
   Different Exception like NullPointer, ArrayOutOfBound etc..
   OverRide exception.
 
-Serilization:
+#### Serilization:
     What is serialization and deserialization.
     code for Implement a serialization and DeSerialization.
     What is Transient. (This advoids serialization) 
     What is Externalization.
     What is SerialVersion UID.
 
-Object Class
+#### Object Class
     What is HashCode.
     why hascode is printed in conslose.
     how to get the data from a Hascode.
@@ -45,13 +45,13 @@ Object Class
     finalize()
     getClass()
 
- String Class
-    [Why string is immutable.](Core java answers.md#Why strings are Immutable.)
+ #### String Class
+    [Why string is immutable.](Core java answers.md#Why strings are Immutable)
     Difference btw StringBuffer and String Builder
         StringBuffer is synchronized and StringBuilder is not sync.
     Methods of String.
-OOP concepts.
-MultiThreading
+#### OOP concepts.
+#### MultiThreading
     What is multiTasking.
     Runnable, Thread Class
     Thread Schedular.
@@ -61,7 +61,7 @@ MultiThreading
     Executor framework
     Lifecycle of Thread class.
 
-Collections
+#### Collections
     What is List
     Diff btn List and LinkedList
     All types of Collections.
