@@ -20,51 +20,50 @@
 - What is Wrapper class.
 
 #### Exception:
-  What is exception
-  Hierarchi of exception
-  Throwable exception
-  Checked Exception and UncheckedException and how do we handle them.
-  Difference  between exception and error.
-  Multiple catch block flow.
-  Try Catch Finally
-  Different between Trow and Throws.
-  ClassCastExcption - why this error occurs and how to handle.
-  Different Exception like NullPointer, ArrayOutOfBound etc..
-  OverRide exception.
+- What is exception
+- Hierarchi of exception
+- Throwable exception
+- Checked Exception and UncheckedException and how do we handle them.
+- Difference  between exception and error.
+- Multiple catch block flow.
+- Try Catch Finally
+- Different between Trow and Throws.
+- ClassCastExcption - why this error occurs and how to handle.
+- Different Exception like NullPointer, ArrayOutOfBound etc..
+- OverRide exception.
 
 #### Serilization:
-    What is serialization and deserialization.
-    code for Implement a serialization and DeSerialization.
-    What is Transient. (This advoids serialization) 
-    What is Externalization.
-    What is SerialVersion UID.
+- What is serialization and deserialization.
+- code for Implement a serialization and DeSerialization.
+- What is Transient. (This advoids serialization)
+- What is Externalization.
+- What is SerialVersion UID.
 
 #### Object Class
-    What is HashCode.
-    why hascode is printed in conslose.
-    how to get the data from a Hascode.
-    hashCode()
-    clone()
-    wait()
-    notify()
-    notifyAll()
-    finalize()
-    getClass()
+ - What is HashCode.
+ - why hascode is printed in conslose.
+ - how to get the data from a Hascode.
+ -  hashCode()
+ -  Clone() W
+ -  Wait()
+ - notify()
+ - notifyAll()
+ - finalize()
+ - getClass()
 
 
 #### OOP concepts.
 #### MultiThreading
-    What is multiTasking.
-    Runnable, Thread Class
-    Thread Schedular.
-    How start method works and who starts this method.
-    Minimum and max priority of Thread.
-    DeatLock condition and code for it.
-    Executor framework
-    Lifecycle of Thread class.
+- What is multiTasking.
+- Runnable, Thread Class
+- Thread Schedular.
+- How start method works and who starts this method.
+- Minimum and max priority of Thread.
+- DeatLock condition and code for it.
+- Executor framework
+- Lifecycle of Thread class.
 
 #### Collections
-    What is List
-    Diff btn List and LinkedList
-    All types of Collections.
+- Diff btn List and LinkedList
+- All types of Collections.
     
