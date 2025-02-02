@@ -3,3 +3,6 @@
   - **Security**: Strings are used for sensitive data like usernames and passwords. Immutability prevents attackers from altering the values.
   - **Thread Safety**: Since string values cannot be changed, they are automatically thread-safe, means multiple threads can safely use the same string.
   - **Efficiency**: The JVM reuses strings in the String Pool by improving memory usage and performance.
+
+#### <a name="question2"></a> Difference between StringBuffer and StringBuilder.
+
