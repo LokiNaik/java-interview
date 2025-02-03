@@ -18,3 +18,9 @@
 18. What is @RestController? How is it different from @Controller?
 19. What is @RequestMapping, and how is it different from @GetMapping?
 20. What are @RequestParam and @PathVariable?
+21. What is Spring Data JPA?
+22. What is @Entity, @Table, @Id, and @Column?
+23. How do you secure a Spring Boot application?
+24. Difference Between @Configuration and @Component
+25. Difference Between @Controller and @RestController
+26. How does Spring Boot handle exceptions globally?
