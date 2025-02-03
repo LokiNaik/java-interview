@@ -12,3 +12,9 @@
 12. How do you handle circular dependencies in Spring?
 13. What are starter dependencies in Spring Boot?
 14. What is the difference between Spring and Spring Boot?
+15. What is the role of @SpringBootApplication?
+16. How does Spring Boot manage properties using application.properties?
+17. What is Spring Boot Actuator?
+18. What is @RestController? How is it different from @Controller?
+19. What is @RequestMapping, and how is it different from @GetMapping?
+20. What are @RequestParam and @PathVariable?
