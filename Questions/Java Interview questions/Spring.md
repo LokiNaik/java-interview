@@ -433,3 +433,105 @@ class DemoController {
 }
 ```
 
+#### 17. What is Spring Data JPA?
+Spring Data JPA is a part of the Spring ecosystem that simplifies data access using JPA (Java Persistence API).
+
+##### Benefits:
+- Reduces boilerplate code.
+- Provides `CrudRepository`, `JpaRepository`, and more.
+
+#### 18. What is @Entity, @Table, @Id, and @Column?
+- `@Entity`: Marks a class as a JPA entity.
+- `@Table`: Maps the entity to a database table.
+- `@Id`: Marks a field as the primary key.
+- `@Column`: Maps a field to a column.
+```java
+@Entity
+@Table(name = "users")
+public class User {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
+
+    @Column(name = "username")
+    private String username;
+
+    // Getters and setters
+}
+```
+#### 19. How do you secure a Spring Boot application?
+Using Spring Security, you can secure an application with features like:
+- Authentication and Authorization.
+- Role-based access.
+- Password encryption with `BCrypt`.
+```java
+@Configuration
+@EnableWebSecurity
+public class SecurityConfig extends WebSecurityConfigurerAdapter {
+    @Override
+    protected void configure(HttpSecurity http) throws Exception {
+        http
+            .authorizeRequests()
+            .antMatchers("/public").permitAll()
+            .anyRequest().authenticated()
+            .and()
+            .formLogin();
+    }
+}
+```
+
+#### 20. Difference Between @Configuration and @Component
+| Feature |	@Configuration	| @Component |
+|----------|----------------|------------|
+| Purpose |	Defines beans explicitly (used for configurations).	| Generic stereotype for any Spring-managed component. |
+| Proxy | Creation	Creates a CGLIB proxy to ensure singleton behavior. |	No proxy by default.|
+| Use Case	| For defining beans via `@Bean`. |	For marking general-purpose classes (e.g., services).|
+
+##### Example of @Configuration:
+```java
+
+@Configuration
+public class AppConfig {
+    @Bean
+    public MyService myService() {
+        return new MyService();
+    }
+}
+```
+##### Example of @Component:
+```java
+
+@Component
+public class MyComponent {
+    public void execute() {
+        System.out.println("Executing logic...");
+    }
+}
+```
+#### 21. Difference Between @Controller and @RestController
+| Feature	| @Controller	| @RestController |
+|---------|--------------|--------------|
+| Purpose	| Used in traditional MVC.	| Used for RESTful APIs. |
+| Response Type	| Returns view templates.	| Returns JSON or XML directly. |
+| Example Usage	| Frontend rendering.	| Backend API development. |
+
+#### 22. What is the difference between @Bean and @Autowired?
+| Feature 	| @Bean	| @Autowired | 
+|-----------|-------|--|
+| Purpose	| Explicitly defines a bean.	| Injects a bean into a component.
+| Location	| Used inside @Configuration classes.	| Used in any Spring-managed class.
+| Example	| `@Bean` public Service service() {...}	| `@Autowired` private Service s;
+
+#### 23. How does Spring Boot handle exceptions globally?
+Using `@ControllerAdvice` and `@ExceptionHandler` annotations.
+
+##### Example:
+```java
+@ControllerAdvice
+public class GlobalExceptionHandler {
+    @ExceptionHandler(Exception.class)
+    public ResponseEntity<String> handleException(Exception ex) {
+        return new ResponseEntity<>("Error: " + ex.getMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+}
+```
