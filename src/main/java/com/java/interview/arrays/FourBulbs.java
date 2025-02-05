@@ -12,6 +12,7 @@ public class FourBulbs {
         String[] colours = {"Red", "Blue", "Green"};
         String[] bulbs = new String[4];
         for (int i = 0; i < colours.length; i++) {
+            // Inner loop is for shifting the bubls elements to right.
             for (int j = bulbs.length - 1; j > 0; j--) {
                 bulbs[j] = bulbs[j - 1];
             }
