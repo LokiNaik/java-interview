@@ -106,6 +106,45 @@ class Demo {
 }
 ```
 
+
+### Which memory areas among Method, HEAP, Stack, PC register, Natve Method stacks are thread safe?
+- In Java, thread safety refers to the ability of a memory area or resource to be safely accessed by multiple threads concurrently without causing data inconsistency or corruption. Let’s examine each memory area to understand whether it is thread-safe or not:
+
+- **1. Method Area**
+    - The Method Area (often part of the Permanent Generation or Metaspace) stores class-level data such as the class structures, methods, static variables, and constant pools.
+    - Thread-Safety: The Method Area itself is not thread-safe in the sense that multiple threads can access the class definitions concurrently.
+However, the JVM ensures synchronization mechanisms are in place when reading and writing class metadata to prevent inconsistency (like class loading or unloading).
+    - Class loading and unloading are synchronized, so there’s no risk of corruption, but it's still shared across threads.
+- **2. Heap**
+   - The Heap is where objects are dynamically allocated during runtime. Objects are stored here, and it's used by all threads.
+   - Thread-Safety:
+       - The Heap is not thread-safe by default. Multiple threads can access objects stored in the Heap simultaneously, which may lead to race conditions, such as when multiple threads are trying to modify the same object.
+       - Thread safety in the Heap can be ensured by using synchronization techniques like synchronized blocks, locks, or atomic operations for shared mutable objects.
+- **3. Stack**
+    - The Stack is used by each thread to store method frames, local variables, and the call stack. Each thread has its own private stack.
+    - Thread-Safety:
+        - The Stack is thread-safe because each thread has its own local stack. Therefore, each thread’s stack is independent of the others, and there is no sharing of stack data between threads.
+        - Since each thread operates on its own stack, there's no interference or race condition between threads accessing their own stack data.
+- **4. Program Counter (PC) Register**
+    - The Program Counter (PC) Register keeps track of the current instruction being executed by each thread. Each thread has its own PC register.
+    - Thread-Safety:
+        - The PC register is thread-safe because each thread has its own PC register.
+Since the PC register is part of the thread context, and each thread operates independently, there is no sharing or conflict over the PC register between threads.
+- **5. Native Method Stack**
+    - The Native Method Stack is used for native method calls (methods written in languages like C or C++ that are executed outside the JVM).
+    - Thread-Safety:
+        - The Native Method Stack is thread-safe in the sense that each thread has its own native stack when calling native methods.
+        - Each thread’s native stack is independent of others, so there’s no conflict or race condition between threads.
+--- 
+
+| Memory Area	| Thread-Safe?	| Explanation |
+| -- | ---|---|
+| Method Area	| Not thread-safe	| Class-level data and metadata are shared across threads, though access is synchronized. |
+| Heap | Not thread-safe	| Objects in the Heap can be accessed and modified by multiple threads simultaneously, requiring synchronization. |
+| Stack	| Thread-safe	| Each thread has its own stack, so no interference occurs between threads. |
+| Program Counter (PC)	| Thread-safe	| Each thread has its own PC register, so there's no sharing or conflict. |
+| Native Method Stack	| Thread-safe	| Each thread has its own native method stack, so no sharing occurs. |
+
 ---
 
 ## Loader Subsystem
