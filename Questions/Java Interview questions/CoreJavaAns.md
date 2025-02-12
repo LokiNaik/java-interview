@@ -324,7 +324,7 @@ Wrapper classes convert primitive types into objects (`Integer`, `Double`, `Bool
 int num = 10;
 Integer obj = Integer.valueOf(num);
 System.out.println(obj); // Output: 10
-
+```
 
 # Exception Handling in Java
 
