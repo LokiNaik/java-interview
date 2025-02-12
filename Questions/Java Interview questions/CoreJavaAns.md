@@ -604,7 +604,7 @@ class Example implements Serializable {
     private static final long serialVersionUID = 123456789L;
     String data;
 }
-
+```
 
 # Object Class in Java
 
@@ -629,9 +629,9 @@ class HashCodeExample {
 
 ## Why is hashCode printed in console?
 When an object is printed, its `toString()` method is called, which by default returns:
-```
-ClassName@hashCodeInHex
-```
+
+`ClassName@hashCodeInHex`
+
 
 ### Example:
 ```java
@@ -737,6 +737,7 @@ public class Main {
         System.out.println(obj.getClass().getName()); // Output: Demo
     }
 }
+```
 
 
 # OOP Concepts in Java
@@ -809,3 +810,4 @@ class Car extends Vehicle {
         System.out.println("Car is starting");
     }
 }
+```
