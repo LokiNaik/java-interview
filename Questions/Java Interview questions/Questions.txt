@@ -102,3 +102,47 @@ Miscellaneous
 3. How do you implement logging in Java?
 4. What are annotations in Java, and how are they used?
 5. What is the difference between Array and ArrayList in Java?
+
+
+
+
+
+
+-----------------------------------------------------------------------
+Cognizent interview
+Core Java
+1. == and .equal() difference
+2. Java 8 featuers.
+3. Why do we use Streams and its user.
+4. HashMap internal working.
+5. What is Singleton class and how can me sure that it is singleton. how can we make sure it has only one instance.
+6. Why String is immutable
+7. Code for Fibannoic series in Java.
+
+Spring boot:
+1. What are annotations you use majorly.
+2. What is Spring MVC.
+3. What are the benfits of Spring boot.
+4. Dependency inject, its type and write a code to implement it.
+5. 
+
+SQL:
+1. LEFT JOIN
+2. Write a query to fetch the data from table B and map them to table A when column is matched.
+-----------------------------------
+TCS:
+Core Java:
+1. Functional Interface
+2. Java 8 features.
+3. What is Lambda expression
+4. Write a code for cube using functional interface.
+5. Code to reverse a array upto n number.
+
+Spring boot 
+@Profile
+ResponseEntity 
+
+Docker file.
+
+
+
