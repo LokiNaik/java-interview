@@ -15,6 +15,7 @@ public class PrimeNumber {
             return false;
         }
         for (int i = 2; i <= Math.sqrt(n); i++) {
+            int sqrt = (int) Math.sqrt(n);
             if (n % i == 0) {
                 return false;
             }

@@ -1,4 +1,4 @@
-package com.java.interview.arrays;
+ package com.java.interview.arrays;
 
 import java.util.Arrays;
 
@@ -12,10 +12,11 @@ public class FourBulbs {
         String[] colours = {"Red", "Blue", "Green"};
         String[] bulbs = new String[4];
         for (int i = 0; i < colours.length; i++) {
+            // Inner loop is for shifting the bubls elements to right.
             for (int j = bulbs.length - 1; j > 0; j--) {
                 bulbs[j] = bulbs[j - 1];
             }
-            bulbs[0] = colours[i];
+            bulbs[0] = colours[i]; // assigning the 0th element of bulb with colour[i]
             // Print the bulbs' colors in this iteration
             System.out.println("Iteration " + (i + 1) + ": " + Arrays.toString(bulbs));
         }
