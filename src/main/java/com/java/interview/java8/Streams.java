@@ -11,26 +11,20 @@ import java.util.function.Function;
 import java.util.stream.Stream;
 
 /**
- * 1️⃣ Intermediate Operations (Transformations)
- * (These return a Stream and are lazy)
+ * 1 Intermediate Operations (Transformations) (These return a Stream and are lazy)
  * <p>
- * Method	Description
- * filter(Predicate<T>)	Filters elements based on a condition
- * map(Function<T,R>)	Transforms elements
- * flatMap(Function<T,Stream<R>>)	Flattens a Stream of Streams
- * distinct()	Removes duplicates
- * sorted()	Sorts elements
- * peek(Consumer<T>)	Debugging (like forEach but doesn’t terminate)
- * limit(n)	Limits the number of elements
- * skip(n)	Skips first n elements
+ * Method Description filter(Predicate<T>) Filters elements based on a condition
+ * map(Function<T,R>) Transforms elements flatMap(Function<T,Stream<R>>)
+ * Flattens a Stream of Streams distinct() Removes duplicates sorted() Sorts
+ * elements peek(Consumer<T>) Debugging (like forEach but doesn’t terminate)
+ * limit(n) Limits the number of elements skip(n) Skips first n elements
  */
 public class Streams {
 
     public static final Logger logger = LoggerFactory.getLogger(Streams.class);
 
     /**
-     * Iterator Basic example.
-     * Prints multiples of 2 up to 20.
+     * Iterator Basic example. Prints multiples of 2 up to 20.
      */
     public static void iteratorExamples() {
         logger.info("Prints the numbers upto 20 with multiply by 2");
@@ -48,7 +42,7 @@ public class Streams {
     }
 
     /**
-     *  Generates random numbers.
+     * Generates random numbers.
      */
     public static void generateRandomNumbers() {
         logger.info("Prints the random numbers upto 10");
@@ -56,31 +50,35 @@ public class Streams {
         integerStream.forEach(System.out::println);
     }
 
-    /** This method filters the array as per the given requirement.*/
+    /**
+     * This method filters the array as per the given requirement.
+     */
     public static void filterMethodExample() {
         logger.info("Filter method example");
         List<String> namesList = Arrays.asList("Lokesh", "Devika", "Naik");
         namesList.stream().filter(names -> names.length() > 4).map(String::toUpperCase).forEach(System.out::println);
-        List<String> namesList2 = namesList.stream().filter(names -> names.length() >= 4).map(names -> names.toUpperCase()).toList();
-        namesList2.stream().forEach(System.out::println);
+        List<String> namesList2 = namesList.stream().filter(names -> names.length() >= 4)
+                .map(String::toUpperCase).toList();
+        namesList2.forEach(System.out::println);
     }
 
     /**
-     * Basic example for Lambda expression, print the cube using the Lambda expression
-     *
+     * Basic example for Lambda expression, print the cube using the Lambda
+     * expression
+     * <p>
      * syntax ==> (params) -> {body};
      */
     public static void exampleForLambdaExpression(int number) {
-        /*Print a cube of number*/
-        logger.info("Printing cube of given number: {}",  number);
+        /* Print a cube of number */
+        logger.info("Printing cube of given number: {}", number);
         Function<Integer, Integer> cube = x -> x * x * x;
-        System.out.println("Cube of "+ number + " is : " +cube.apply(number)); // prints cube.
+        System.out.println("Cube of " + number + " is : " + cube.apply(number)); // prints cube.
     }
 
     /**
      * This distinct() is used to return only unique elements from the array.
      *
-     * @param list
+     * @param list list
      * @return
      */
     public static Stream<String> distinctMethodExample(List<String> list) {
@@ -98,7 +96,8 @@ public class Streams {
     }
 
     public static void getTheLongestString(List<String> list) {
-        Optional<String> longestString = list.stream().reduce((element1, element2) -> element1.length() > element2.length() ? element1 : element2);
+        Optional<String> longestString = list.stream()
+                .reduce((element1, element2) -> element1.length() > element2.length() ? element1 : element2);
         longestString.ifPresent(System.out::println);
     }
 
@@ -107,26 +106,25 @@ public class Streams {
         longest.ifPresent(s1 -> System.out.println(s1));
     }
 
-    /*Reverse each string in a list*/
+    /* Reverse each string in a list */
     public static void reverseEachString(List<String> list) {
         list.stream().map(s -> new StringBuilder(s).reverse().toString()).forEach(System.out::println);
     }
 
-    /*Palindrome string using streams*/
+    /* Palindrome string using streams */
     public static void isPalindrome(List<String> list) {
-        list.stream().map(s -> s.equals(new StringBuilder(s).reverse().toString())).forEach(System.out::println);
+        list.stream().map(s -> s.contentEquals(new StringBuilder(s).reverse())).forEach(System.out::println);
     }
-
 
     public static void main(String[] args) {
         List<String> namesList = Arrays.asList("Lokesh", "Devika", "Lokesh Naik", "naik", "Lokesh");
-        /*Longest string*/
+        /* Longest string */
         longestStringExample(namesList);
 
-        /*Reverse each string*/
+        /* Reverse each string */
         reverseEachString(namesList);
 
-        /*Palindrome using string*/
+        /* Palindrome using string */
         isPalindrome(namesList);
 
         iterateExamples();
@@ -135,14 +133,12 @@ public class Streams {
 
         exampleForLambdaExpression(3);
 
-
 //        generateRandomNumbers();
 //        filterMethodExample();
 
 //        /* distinct method */
         Stream<String> stream = distinctMethodExample(namesList);
         stream.forEach(System.out::println);
-
 
         /** Sorted method **/
 //        Stream<String> sortedStream = (Stream<String>) sortedMethodExample(namesList);
@@ -151,9 +147,8 @@ public class Streams {
         /* reduce method */
 //        reduceMethodExample(Arrays.asList(1, 2, 3, 4, 5));
 
-        /*LongestString*/
+        /* LongestString */
         getTheLongestString(Arrays.asList("Lokesh", "Devika", "Lokesh Naik", "naik", ""));
     }
-
 
 }
