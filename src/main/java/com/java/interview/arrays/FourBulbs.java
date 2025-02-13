@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 /**
  * four bulbs are there and 3 colors say red, blue and green.
- * In each iteration assign one color to one of the bulb from left.
+ * Car each iteration assign one color to one of the bulb from left.
  * then in iteration 2,shift everything right and assign other color to the bulb at left and so on...
  */
 public class FourBulbs {

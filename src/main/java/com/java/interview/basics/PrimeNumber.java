@@ -3,9 +3,9 @@ package com.java.interview.basics;
 public class PrimeNumber {
 
     public static void main(String[] args) {
-        System.out.println(isPrime(10));
-
-        printPrime(10);
+//        System.out.println(isPrime(10));
+//
+//        printPrime(10);
 
         printUpToNprime(10);
     }
@@ -33,11 +33,13 @@ public class PrimeNumber {
 
     public static void printUpToNprime(int n) {
         int count = 0;
-        for (int i = 2; i <= n; i++) {
-            if (isPrime(i)) {
-                System.out.print(i + " ");
+        int num = 2;
+        while (count < n){
+            if(isPrime(num)){
+                System.out.println(num + " ");
                 count++;
             }
+            num++;
         }
     }
 }

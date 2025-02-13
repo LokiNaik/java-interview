@@ -31,7 +31,7 @@ public class RotateArrayByKsteps {
     }
 
     /**
-     * In order to rotate the array we have to reverse the array.
+     * Car order to rotate the array we have to reverse the array.
      * @param arr Integer array
      * @param left left index of array
      * @param right right index of array

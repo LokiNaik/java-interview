@@ -43,5 +43,4 @@ public class StringManipulationUsingStreams {
         }
         return count;
     }
-
 }

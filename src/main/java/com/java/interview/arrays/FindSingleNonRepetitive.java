@@ -15,13 +15,4 @@ public class FindSingleNonRepetitive {
         }
         return result;
     }
-//    public static String findSingleNonRepetitive2(String string) {
-//        char[] chars = string.toCharArray();
-//        String result = null;
-//        for (int i = 0; i < chars.length; i++) {
-//            if ()
-//        }
-//        return "";
-//    }
-
 }
