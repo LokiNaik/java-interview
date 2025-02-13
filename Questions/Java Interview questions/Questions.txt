@@ -124,7 +124,9 @@ Spring boot:
 2. What is Spring MVC.
 3. What are the benfits of Spring boot.
 4. Dependency inject, its type and write a code to implement it.
-5. 
+
+What do you use for diployement CI/CD.
+what are the uses of a microservices.
 
 SQL:
 1. LEFT JOIN
