@@ -127,6 +127,8 @@ Spring boot:
 
 What do you use for diployement CI/CD.
 what are the uses of a microservices.
+What methodology do you follow?  Agile.
+Rate your self on Java on a scale of 10. // think and give answer lets say 7 because we are not that confident java, we can contineouly learn parally.
 
 SQL:
 1. LEFT JOIN
