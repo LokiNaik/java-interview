@@ -47,5 +47,6 @@ Explain complete flow in spring boot to insert a ID into Database.
 Dependency injection, what are the different ways to achieve it.
 Exception Handling in Spring boot.
 What is the latest Java version in the market.
-What is Synchronization in java. - Synchronization in Java is the process that allows only one thread at a particular time to complete a given task entirely 
+Which is more effificent between HashMap and HashTable, what are the difference between then. when to choose them and why?
+Which is synnchoronized, HashTable or HashMap?
 What is LeftOuterJoin in SQL.
