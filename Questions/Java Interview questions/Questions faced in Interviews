@@ -1,0 +1,51 @@
+Cognizent interview
+Core Java
+1. == and .equal() difference
+2. Java 8 featuers.
+3. Why do we use Streams and its user.
+4. HashMap internal working.
+5. What is Singleton class and how can me sure that it is singleton. how can we make sure it has only one instance.
+6. Why String is immutable
+7. Code for Fibannoic series in Java.
+
+Spring boot:
+1. What are annotations you use majorly.
+2. What is Spring MVC.
+3. What are the benfits of Spring boot.
+4. Dependency inject, its type and write a code to implement it.
+
+What do you use for diployement CI/CD.
+what are the uses of a microservices.
+What methodology do you follow?  Agile.
+Rate your self on Java on a scale of 10. // think and give answer lets say 7 because we are not that confident java, we can contineouly learn parally.
+
+SQL:
+1. LEFT JOIN
+2. Write a query to fetch the data from table B and map them to table A when column is matched.
+-----------------------------------
+TCS: TR 1:
+
+Core Java:
+1. Functional Interface
+2. Java 8 features.
+3. What is Lambda expression
+4. Write a code for cube using functional interface.
+5. Code to reverse a array upto n number.
+
+Spring boot 
+@Profile
+ResponseEntity 
+
+Docker file.
+
+
+TCS Techinical round 2:
+Tell me 10 annotations you use frequently.
+What is functional Interface. 
+What is Data Encapsulation how would you achieve for a Person class.
+Explain complete flow in spring boot to insert a ID into Database.
+Dependency injection, what are the different ways to achieve it.
+Exception Handling in Spring boot.
+What is the latest Java version in the market.
+What is Synchronization in java. - Synchronization in Java is the process that allows only one thread at a particular time to complete a given task entirely 
+What is LeftOuterJoin in SQL.
