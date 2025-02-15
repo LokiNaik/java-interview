@@ -22,6 +22,17 @@ Rate your self on Java on a scale of 10. // think and give answer lets say 7 bec
 SQL:
 1. LEFT JOIN
 2. Write a query to fetch the data from table B and map them to table A when column is matched.
+
+
+HR Round; Be confident.
+1. Tell me about the projects you worked and your educational background.
+2. Did you get any appreciation from client and any hikes.
+3. What is reason leaving present company despite of working 3 years.
+4. Did you had any experience managing a team of 2-3 people.
+5. Have you learnt any new skills in the past 3 yesrs to improve yourself.
+6. Other than projects you worked, have contributed anything other.
+7. 
+
 -----------------------------------
 TCS: TR 1:
 
@@ -39,7 +50,9 @@ ResponseEntity
 Docker file.
 
 
+
 TCS Techinical round 2:
+
 Tell me 10 annotations you use frequently.
 What is functional Interface. 
 What is Data Encapsulation how would you achieve for a Person class.
