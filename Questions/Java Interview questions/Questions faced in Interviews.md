@@ -64,3 +64,4 @@
 8. Which is more effificent between HashMap and HashTable, what are the difference between then. when to choose them and why?
 9. Which is synnchoronized, HashTable or HashMap?
 10. What is LeftOuterJoin in SQL.
+11. Life cycle of Spring MVC.
