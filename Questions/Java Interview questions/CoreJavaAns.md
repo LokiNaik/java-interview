@@ -274,6 +274,29 @@ public class Main {
 ## Volatile Keyword
 `volatile` ensures that a variable is always read from main memory instead of CPU cache, ensuring visibility across threads.
 
+- The volatile keyword in Java is used to ensure that a variable's value is always the same across threads. It's primarily used in multi-threaded programming.
+- How it works:
+      - The volatile keyword forces the Java VM to read and write a variable's value directly to and from main memory.
+      - This ensures that changes to a variable are immediately visible to other threads.
+      - This prevents potential inconsistencies and data races.
+
+- When to use:
+      - Use volatile when there is a possibility of a race condition on a field.
+      - Use volatile when you need to ensure the visibility of a single variable that is accessed by multiple threads. 
+- Potential issues
+     - Overusing volatile can lead to performance issues.
+     - volatile fields can be slower than non-volatile fields because the system is forced to store to memory rather than use registers.
+##### Example
+```java
+class SharedObj
+{
+   // volatile keyword here makes sure that
+   // the changes made in one thread are 
+   // immediately reflect in other thread
+   static volatile int sharedVar = 6;
+}
+```
+
 ### Example:
 ```java
 class VolatileExample {
@@ -812,30 +835,6 @@ class Car extends Vehicle {
 }
 ```
 
-
-#### Volatile key word
-- The volatile keyword in Java is used to ensure that a variable's value is always the same across threads. It's primarily used in multi-threaded programming.
-- How it works:
-      - The volatile keyword forces the Java VM to read and write a variable's value directly to and from main memory.
-      - This ensures that changes to a variable are immediately visible to other threads.
-      - This prevents potential inconsistencies and data races.
-
-- When to use:
-      - Use volatile when there is a possibility of a race condition on a field.
-      - Use volatile when you need to ensure the visibility of a single variable that is accessed by multiple threads. 
-- Potential issues
-     - Overusing volatile can lead to performance issues.
-     - volatile fields can be slower than non-volatile fields because the system is forced to store to memory rather than use registers.
-##### Example
-```java
-class SharedObj
-{
-   // volatile keyword here makes sure that
-   // the changes made in one thread are 
-   // immediately reflect in other thread
-   static volatile int sharedVar = 6;
-}
-```
 
 #### Transient Keyword
 - The transient keyword in Java is used to prevent a variable from being serialized. Serialization is the process of converting an object's state into a byte stream. 
