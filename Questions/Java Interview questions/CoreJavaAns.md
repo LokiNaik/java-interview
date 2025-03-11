@@ -564,6 +564,16 @@ public class DeserializationDemo {
 ## What is Transient Keyword?
 The `transient` keyword prevents a variable from being serialized. When an object is serialized, transient variables are ignored.
 
+- The transient keyword in Java is used to prevent a variable from being serialized. Serialization is the process of converting an object's state into a byte stream. 
+- Why use the transient keyword?
+      - To protect sensitive data, such as passwords, from being serialized
+      - To prevent unnecessary data from being persisted
+      - To mark fields that are temporary or should remain private
+      - To not serialize variables whose values can be calculated from other serialized objects or systems 
+- How to use the transient keyword?
+    - Add the transient keyword to the field you want to prevent from being serialized
+    - The compiler will ignore the attribute when serializing an object 
+
 #### Example:
 ```java
 class Employee implements Serializable {
@@ -836,13 +846,3 @@ class Car extends Vehicle {
 ```
 
 
-#### Transient Keyword
-- The transient keyword in Java is used to prevent a variable from being serialized. Serialization is the process of converting an object's state into a byte stream. 
-- Why use the transient keyword?
-      - To protect sensitive data, such as passwords, from being serialized
-      - To prevent unnecessary data from being persisted
-      - To mark fields that are temporary or should remain private
-      - To not serialize variables whose values can be calculated from other serialized objects or systems 
-- How to use the transient keyword?
-    - Add the transient keyword to the field you want to prevent from being serialized
-    - The compiler will ignore the attribute when serializing an object 
