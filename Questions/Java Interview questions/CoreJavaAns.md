@@ -811,3 +811,18 @@ class Car extends Vehicle {
     }
 }
 ```
+
+
+#### Volatile key word
+- The volatile keyword in Java is used to ensure that a variable's value is always the same across threads. It's primarily used in multi-threaded programming.
+- How it works:
+      - The volatile keyword forces the Java VM to read and write a variable's value directly to and from main memory.
+      - This ensures that changes to a variable are immediately visible to other threads.
+      - This prevents potential inconsistencies and data races.
+
+- When to use:
+      - Use volatile when there is a possibility of a race condition on a field.
+      - Use volatile when you need to ensure the visibility of a single variable that is accessed by multiple threads. 
+- Potential issues
+     - Overusing volatile can lead to performance issues.
+     - volatile fields can be slower than non-volatile fields because the system is forced to store to memory rather than use registers. 
