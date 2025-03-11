@@ -825,4 +825,25 @@ class Car extends Vehicle {
       - Use volatile when you need to ensure the visibility of a single variable that is accessed by multiple threads. 
 - Potential issues
      - Overusing volatile can lead to performance issues.
-     - volatile fields can be slower than non-volatile fields because the system is forced to store to memory rather than use registers. 
+     - volatile fields can be slower than non-volatile fields because the system is forced to store to memory rather than use registers.
+##### Example
+```java
+class SharedObj
+{
+   // volatile keyword here makes sure that
+   // the changes made in one thread are 
+   // immediately reflect in other thread
+   static volatile int sharedVar = 6;
+}
+```
+
+#### Transient Keyword
+- The transient keyword in Java is used to prevent a variable from being serialized. Serialization is the process of converting an object's state into a byte stream. 
+- Why use the transient keyword?
+      - To protect sensitive data, such as passwords, from being serialized
+      - To prevent unnecessary data from being persisted
+      - To mark fields that are temporary or should remain private
+      - To not serialize variables whose values can be calculated from other serialized objects or systems 
+- How to use the transient keyword?
+    - Add the transient keyword to the field you want to prevent from being serialized
+    - The compiler will ignore the attribute when serializing an object 
