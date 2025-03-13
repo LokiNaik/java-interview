@@ -65,3 +65,34 @@
 9. Which is synnchoronized, HashTable or HashMap?
 10. What is LeftOuterJoin in SQL.
 11. Life cycle of Spring MVC.
+
+#### DELOITTE
+1. Service Registry and its uses.
+2. how do you decleare the host for each servies and how they communicated using Service registry how do they pick up the host.
+3. Config and how it is registered.
+4. when you change a property in application.yml in config, how does the client pick up the change automatically
+5. what is difference between comparator and comparable.
+6. difference btwn .equal() and ==
+7. code to check if two objects are same using .equal() and ==.
+8. Boxing, unboxing and typecasting.  
+9. spring profiles
+10. how do we access a variable from application.properties file to class
+11. which pattern you use so that if a transaction is failed in one of the servies should be rolled back in others too. and how to implement it.
+12. how to create a docker image
+13. how to make a docker container run with all the required libraries and modules on server.
+14. JPA and ORM - how do you define a table name in the spring boot application.
+15. what is dependency injection and how many ways.
+16. what is GlobalExceptionHandler in spring boot and how do we implement it and its uses.
+17. how do you return a object from a controller class.
+18. final key word, what happens if we declare a variable as final, can we print in the main method.
+19. what is static key word. if a varibale is defined as static can it be printed in main.
+20. exceptions types of exceptions.
+21. difference between throws and thow.
+22. synchronzation, where it is used and why.?
+23. what is load balancer and how do we implement it in the service.
+24. client side loadbalancer and server side loadbalancer.
+25. If I have a huge list of employees list and how can each employee has again lot of data, in this scenario how do we improve the performance.(using parallel stream).
+26. what is functional Interface and how do you use it.
+27. 
+
+code to print dept and employess with the highest salary in each dept using streams.
