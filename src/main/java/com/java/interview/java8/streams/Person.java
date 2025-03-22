@@ -1,4 +1,4 @@
-package com.java.interview.java8;
+package com.java.interview.java8.streams;
 
 import java.util.Date;
 

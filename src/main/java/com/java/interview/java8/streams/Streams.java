@@ -1,4 +1,4 @@
-package com.java.interview.java8;
+package com.java.interview.java8.streams;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

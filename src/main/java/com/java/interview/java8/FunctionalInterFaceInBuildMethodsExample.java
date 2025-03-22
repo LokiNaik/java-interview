@@ -1,5 +1,7 @@
 package com.java.interview.java8;
 
+import com.java.interview.java8.streams.Person;
+
 import java.util.Date;
 import java.util.UUID;
 import java.util.function.Consumer;

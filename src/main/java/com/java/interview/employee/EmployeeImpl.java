@@ -8,17 +8,19 @@ public class EmployeeImpl {
     public static void main(String[] args) {
         List<Employee> employees = Employee.getEmployees();
 
+        getHighestSalaryFromEachDept(employees);
+
 //        findMaleAndFemale(employees);
 //        findMaleAndFemaleCountUsingStreams(employees);
 //        printDepartments(employees);
 //        averageAge(employees);
 //        highestSalary(employees);
 //        lowestSalary(employees);
-        getEmployeesSalary(employees);
-        countEmployeesInEachDept(employees);
-        printEmployeesNamesInSingleString(employees);
-        findAvgSalaryInEachDept(employees);
-        findSecondHighestSalary(employees);
+//        getEmployeesSalary(employees);
+//        countEmployeesInEachDept(employees);
+//        printEmployeesNamesInSingleString(employees);
+//        findAvgSalaryInEachDept(employees);
+//        findSecondHighestSalary(employees);
     }
 
     //  * 1. How many male and female employees are there in the organization?
@@ -39,7 +41,8 @@ public class EmployeeImpl {
     }
 
     public static void findMaleAndFemaleCountUsingStreams(List<Employee> employees) {
-        Map<String, Long> count = employees.stream().collect(Collectors.groupingBy(Employee::getGender, Collectors.counting()));
+        Map<String, Long> count = employees.stream()
+                .collect(Collectors.groupingBy(Employee::getGender, Collectors.counting()));
         System.out.println(count);
     }
 
@@ -83,6 +86,14 @@ public class EmployeeImpl {
         System.out.println(empDept);
     }
 
+    /*Find the Average Salary of Employees in Each Department*/
+    public static void findAvgSalaryInEachDept(List<Employee> employees) {
+        Map<String, Double> emp = employees.stream()
+                .collect(Collectors.groupingBy(Employee::getDepartment,
+                        Collectors.averagingDouble(Employee::getSalary)));
+        System.out.println(emp);
+    }
+
     /* Get the Names of All Employees in a Single String */
     public static void printEmployeesNamesInSingleString(List<Employee> employees) {
         String em = employees
@@ -92,16 +103,27 @@ public class EmployeeImpl {
         System.out.println(em);
     }
 
-    /*Find the Average Salary of Employees in Each Department*/
-    public static void findAvgSalaryInEachDept(List<Employee> employees) {
-        Map<String, Double> emp = employees.stream().collect(Collectors.groupingBy(Employee::getDepartment, Collectors.averagingDouble(Employee::getSalary)));
-        System.out.println(emp);
-    }
 
     /*Find the Second-Highest Salary*/
     public static void findSecondHighestSalary(List<Employee> employees) {
-       Optional<Employee> secondHighestSalary =  employees.stream().sorted(Comparator.comparingDouble(Employee::getSalary).reversed()).skip(1).findFirst();
+       Optional<Employee> secondHighestSalary =  employees.stream().
+               sorted(Comparator.comparingDouble(Employee::getSalary).reversed()).skip(1).findFirst();
         System.out.println(secondHighestSalary);
+    }
+
+
+    /*  Deloitte question:
+        Question: Get the highest salary from each department using streams api which should return Dept and Employee details from each dept.
+     */
+    public static void getHighestSalaryFromEachDept(List<Employee> employeeList){
+        Map<String, Employee> collect = employeeList.stream()
+                .collect(Collectors.groupingBy(Employee::getDepartment,
+                        Collectors.collectingAndThen(
+                                Collectors.maxBy(Comparator.comparingDouble(Employee::getSalary)),
+                                Optional::get // Extracts the employee from Optional
+                        )
+                ));
+        collect.forEach((dept, emp) -> System.out.println(dept + " -> " + emp));
     }
 
 }
