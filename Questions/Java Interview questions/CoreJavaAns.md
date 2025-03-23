@@ -845,4 +845,90 @@ class Car extends Vehicle {
 }
 ```
 
+## Final Keyword
+##### 1. `final` with Constants
+- When a variable is declared as `final`, its value cannot be changed once assigned.
+- Rules for Final Variables:
+    - Must be initialized when declared or in the constructor.
+    - Cannot be reassigned once assigned a value.
+##### 2. `final` with Methods (Prevent Overriding)
+- When a method is declared as final, it cannot be overridden in a subclass.
+- Rules for Final Methods:
+    - Prevents method overriding in child classes.
+    - Can be inherited and used in child classes but cannot be modified.
+##### 3. `final` with Classes (Prevent Inheritance)
+ - When a class is declared as final, it cannot be extended by any other class.
+ - Rules for Final Classes:
+    - Cannot be subclassed (extended).
+    - Used to prevent inheritance for security and design reasons (e.g., String class in Java is final).
+##### 4. final with Static Variables (Immutable Shared Constants)
+- A final static variable is a constant that belongs to the class and is shared among all instances.
+- Rules for Final Static Variables:
+    - Must be initialized at the time of declaration or in a static block.
+    - Commonly used for constants (public static final).
+##### 5. final with Objects (Reference Cannot Change)
+- When an object reference is declared as final, it cannot point to a new object, but the contents of the object can still change.
+- Rules for Final Object References:
+    - The reference cannot be changed to point to a new object.
+    - The internal state of the object can still be modified.
+  ##### Example
+  ```java
+    class Person {
+    String name = "John";
+    }
+
+    public class FinalObjectExample {
+        public static void main(String[] args) {
+            final Person person = new Person();
+            System.out.println(person.name); // Output: John
+
+            // Allowed: Modifying object state
+            person.name = "David";
+            System.out.println(person.name); // Output: David
+
+            // Not Allowed: Changing reference
+            // person = new Person(); // Compilation Error
+        }
+    }
+
+  ```
+
+##### 6. Constructor Dependency Injection with final
+When you declare a service dependency in a Spring Boot controller like this:
+```java
+@RestController
+@RequestMapping("/api")
+public class MyController {
+
+    private final MyService myService; // final field
+
+    @Autowired
+    public MyController(MyService myService) {
+        this.myService = myService;
+    }
+
+    @GetMapping("/hello")
+    public String sayHello() {
+        return myService.getMessage();
+    }
+}
+```
+- private final MyService myService; → Declares a final reference that must be assigned in the constructor and cannot be reassigned later.
+- @Autowired on the constructor → Injects the MyService instance into the controller when the Spring context is initialized.
+- The constructor ensures immutability of the service reference.
+##### Behavior of final in Constructor Dependency Injection
+- **Ensures Immutability**
+    - Since the field is final, it must be initialized in the constructor and cannot be reassigned later.
+    - This guarantees that the service reference remains unchanged throughout the lifecycle of the controller.
+    - This is a best practice for writing robust and thread-safe code.
+- **Prevents Accidental Reassignment**
+      - If the field were not final, someone might accidentally reassign it inside the class
+      - Using final prevents such issues and enforces a single assignment.
+    ```java
+        myService = new AnotherService();  // This is NOT allowed with final
+    ```
+- **Helps in Dependency Injection (DI)**
+      - Since Spring Boot automatically injects dependencies using the constructor, having final ensures:
+      - The injected service cannot be null.
+      - The service remains consistent throughout the class execution.
 
